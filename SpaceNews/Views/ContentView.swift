@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var data = SpaceAPI()
+
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack {
+                
+            }
+        }
+        .navigationTitle("Space News")
+        .environmentObject(data)
+        .onAppear {
+            data.getData()
+        }
     }
 }
 
