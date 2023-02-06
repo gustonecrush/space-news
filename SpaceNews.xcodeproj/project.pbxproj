@@ -13,6 +13,7 @@
 		09DD5E59299156DD00E41F55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09DD5E58299156DD00E41F55 /* Preview Assets.xcassets */; };
 		09DD5E632991599D00E41F55 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD5E622991599D00E41F55 /* APIClient.swift */; };
 		09DD5E6529915D7200E41F55 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD5E6429915D7200E41F55 /* NewsView.swift */; };
+		09DD5E6929915DD900E41F55 /* NewsArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD5E6829915DD900E41F55 /* NewsArticle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		09DD5E58299156DD00E41F55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		09DD5E622991599D00E41F55 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		09DD5E6429915D7200E41F55 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		09DD5E6829915DD900E41F55 /* NewsArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				09DD5E53299156DA00E41F55 /* ContentView.swift */,
 				09DD5E6429915D7200E41F55 /* NewsView.swift */,
+				09DD5E6829915DD900E41F55 /* NewsArticle.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				09DD5E54299156DA00E41F55 /* ContentView.swift in Sources */,
 				09DD5E6529915D7200E41F55 /* NewsView.swift in Sources */,
 				09DD5E52299156DA00E41F55 /* SpaceNewsApp.swift in Sources */,
+				09DD5E6929915DD900E41F55 /* NewsArticle.swift in Sources */,
 				09DD5E632991599D00E41F55 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
