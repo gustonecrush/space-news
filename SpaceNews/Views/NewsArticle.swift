@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import CachedAsyncImage
 
 struct NewsArticle: View {
     let title: String
@@ -21,15 +20,19 @@ struct NewsArticle: View {
                 .italic()
             
             HStack(alignment: .center) {
-                CachedAsyncImage(url: URL(string: imageUrl), transaction: Transaction(animation: .easeInOut)) { phase in
-                    if let image = phase.image {
-                        image
-                            .resizable()
-                            .scaledToFit()
-                            .clipShape(RoundedRectangle(cornerRadius: 20))
-                    } else {
-                        // placeholder
+                if #available(iOS 15.0, *) {
+                    AsyncImage(url: URL(string: imageUrl), transaction: Transaction(animation: .easeInOut)) { phase in
+                        if let image = phase.image {
+                            image
+                                .resizable()
+                                .scaledToFit()
+                                .clipShape(RoundedRectangle(cornerRadius: 20))
+                        } else {
+                            // placeholder
+                        }
                     }
+                } else {
+                    // Fallback on earlier versions
                 }
             }
             Text(title)
