@@ -14,6 +14,7 @@
 		09DD5E632991599D00E41F55 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD5E622991599D00E41F55 /* APIClient.swift */; };
 		09DD5E6529915D7200E41F55 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD5E6429915D7200E41F55 /* NewsView.swift */; };
 		09DD5E6929915DD900E41F55 /* NewsArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD5E6829915DD900E41F55 /* NewsArticle.swift */; };
+		09DD5E6C2991638300E41F55 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 09DD5E6B2991638300E41F55 /* CachedAsyncImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09DD5E6C2991638300E41F55 /* CachedAsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +110,9 @@
 			dependencies = (
 			);
 			name = SpaceNews;
+			packageProductDependencies = (
+				09DD5E6B2991638300E41F55 /* CachedAsyncImage */,
+			);
 			productName = SpaceNews;
 			productReference = 09DD5E4E299156DA00E41F55 /* SpaceNews.app */;
 			productType = "com.apple.product-type.application";
@@ -137,7 +142,7 @@
 			);
 			mainGroup = 09DD5E45299156DA00E41F55;
 			packageReferences = (
-				09DD5E612991595000E41F55 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+				09DD5E6A2991638300E41F55 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
 			);
 			productRefGroup = 09DD5E4F299156DA00E41F55 /* Products */;
 			projectDirPath = "";
@@ -374,7 +379,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		09DD5E612991595000E41F55 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+		09DD5E6A2991638300E41F55 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
 			requirement = {
@@ -383,6 +388,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		09DD5E6B2991638300E41F55 /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09DD5E6A2991638300E41F55 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 09DD5E46299156DA00E41F55 /* Project object */;
 }

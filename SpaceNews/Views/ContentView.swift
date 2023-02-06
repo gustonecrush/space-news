@@ -18,14 +18,14 @@ struct ContentView: View {
                 NewsView()
                     .opacity(opac)
             }
-        }
-        .navigationTitle("Space News")
-        .environmentObject(data)
-        .onAppear {
-            data.getData()
-            
-            withAnimation(.easeIn(duration: 2)) {
-                opac = 1.0
+            .navigationTitle("Space News")
+            .environmentObject(data)
+            .onAppear {
+                data.getData()
+                
+                withAnimation(.easeIn(duration: 2)) {
+                    opac = 1.0
+                }
             }
         }
     }

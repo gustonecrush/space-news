@@ -27,8 +27,11 @@ struct NewsArticle: View {
                                 .resizable()
                                 .scaledToFit()
                                 .clipShape(RoundedRectangle(cornerRadius: 20))
+                                .transition(.opacity)
                         } else {
-                            // placeholder
+                            HStack {
+                                // placeholder
+                            }
                         }
                     }
                 } else {
