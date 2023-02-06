@@ -21,6 +21,9 @@ struct NewsView: View {
                     }
             }
         }
+        .refreshable {
+            data.getData()
+        }
     }
 }
 
