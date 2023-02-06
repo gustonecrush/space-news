@@ -127,6 +127,9 @@
 				Base,
 			);
 			mainGroup = 09DD5E45299156DA00E41F55;
+			packageReferences = (
+				09DD5E612991595000E41F55 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+			);
 			productRefGroup = 09DD5E4F299156DA00E41F55 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -357,6 +360,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		09DD5E612991595000E41F55 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 09DD5E46299156DA00E41F55 /* Project object */;
 }
