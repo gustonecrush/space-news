@@ -51,8 +51,9 @@
 		09DD5E50299156DA00E41F55 /* SpaceNews */ = {
 			isa = PBXGroup;
 			children = (
+				09DD5E5F299157BD00E41F55 /* API */,
+				09DD5E60299157C200E41F55 /* Views */,
 				09DD5E51299156DA00E41F55 /* SpaceNewsApp.swift */,
-				09DD5E53299156DA00E41F55 /* ContentView.swift */,
 				09DD5E55299156DD00E41F55 /* Assets.xcassets */,
 				09DD5E57299156DD00E41F55 /* Preview Content */,
 			);
@@ -65,6 +66,21 @@
 				09DD5E58299156DD00E41F55 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		09DD5E5F299157BD00E41F55 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		09DD5E60299157C200E41F55 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				09DD5E53299156DA00E41F55 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
